@@ -1,0 +1,60 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output/ventas_output",
+				"container": "ventas"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "fecha",
+				"type": "String"
+			},
+			{
+				"name": "cliente",
+				"type": "String"
+			},
+			{
+				"name": "producto",
+				"type": "String"
+			},
+			{
+				"name": "categoria",
+				"type": "String"
+			},
+			{
+				"name": "cantidad",
+				"type": "String"
+			},
+			{
+				"name": "precio_unitario",
+				"type": "String"
+			},
+			{
+				"name": "pais",
+				"type": "String"
+			},
+			{
+				"name": "ingreso_total",
+				"type": "String"
+			}
+		]
+	}
+}

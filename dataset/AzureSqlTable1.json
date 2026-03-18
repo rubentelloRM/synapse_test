@@ -1,0 +1,57 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "fecha",
+				"type": "date"
+			},
+			{
+				"name": "cliente",
+				"type": "varchar"
+			},
+			{
+				"name": "producto",
+				"type": "varchar"
+			},
+			{
+				"name": "categoria",
+				"type": "varchar"
+			},
+			{
+				"name": "cantidad",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "precio_unitario",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "pais",
+				"type": "varchar"
+			},
+			{
+				"name": "ingreso_total",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ventas"
+		}
+	}
+}
